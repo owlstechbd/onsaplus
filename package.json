@@ -1,0 +1,20 @@
+{
+  "name": "onsaplus-frontend",
+  "version": "1.0.0",
+  "description": "shp-bender --remote https://www.onsaplus.sk",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-replace": "^1.1.4"
+  }
+}

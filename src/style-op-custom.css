@@ -1,0 +1,376 @@
+.op-custom-escape {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+header[itemprop="headline"] {
+    display: none;
+}
+
+.op-full-width-page {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+}
+
+.op-full-width-page-green {
+    background: #16A34A;
+    color: #F0FDF4;
+}
+
+.op-full-width-page-white {
+    background: white;
+    color: black;
+}
+
+.op-custom-page-box {
+    display: inline-block;
+    background: #F0FDF4;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding: 1.25rem 1rem;
+}
+
+.op-custom-page-box-small {
+    padding: 1rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+.op-custom-page-header-main {
+    position: relative;
+    z-index: 10;
+    padding: 8rem 8rem 8rem 0;
+    flex-basis: 60%;
+}
+
+.op-custom-page-heading {
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #F0FDF4 !important;
+}
+
+.op-custom-page-header-image-wrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    height: 100%;
+}
+
+.op-custom-page-header-image {
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.op-custom-page-header-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: unset !important;
+    z-index: 0;
+}
+
+.op-custom-page-header-container, .op-custom-page-info-container {
+    position: unset !important;
+    overflow: hidden !important;
+    display: grid !important;
+    grid-template-columns: 60% 40%;
+    align-items: start;
+    width: 100%;
+}
+
+.op-custom-page-heading-text {
+    font-weight: 400;
+}
+
+.op-custom-page-heading-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    min-width: 0;
+    row-gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.op-custom-page-heading-list li {
+    display: flex;
+    align-items: center;
+}
+
+.op-custom-page-heading-list li::before {
+    content: url("https://cdn.myshoptet.com/usr/www.onsaplus.sk/user/documents/pages/checkmark.svg");
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .op-custom-page-heading-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .op-custom-page-heading {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .op-custom-page-header-image {
+        display: none;
+    }
+
+    .op-custom-page-header-main {
+        padding: 4rem 2rem 4rem 0;
+    }
+
+    .op-custom-page-header-container {
+        grid-template-columns: 100%;
+    }
+
+    .op-custom-page-header-main {
+        max-width: 100%;
+    }
+
+    .op-custom-page-heading {
+        font-size: 2.75rem;
+    }
+}
+
+.op-custom-page-section {
+    margin: 6rem auto !important;
+}
+
+.op-custom-page-contacts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    width: 100%;
+}
+
+.op-custom-page-square-wrapper {
+    width: 5rem;
+    height: 5rem;
+    background: #F0FDF4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.op-custom-page-contact-wrapper {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+
+.op-custom-page-square-item {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.op-custom-page-square-items > p {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.op-custom-page-square-items > a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.op-custom-page-contacts {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    .op-custom-page-contacts {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .op-custom-page-contacts {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+    }
+}
+
+.op-custom-page-info-heading > h2 {
+    font-size: 2rem;
+}
+
+.op-custom-page-info-point {
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.op-custom-page-info-point img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.op-custom-page-info-wrapper {
+    display: flex;
+    gap: 3rem;
+}
+
+.op-custom-page-info-text {
+    margin-left: 3rem;
+}
+
+.op-custom-page-info-padding {
+    padding: 8rem 0;
+    position: relative;
+    z-index: 10;
+}
+
+.op-custom-page-info-map {
+    position: absolute;
+    right: 0;
+    top: -16rem;
+    display: flex;
+    justify-items: center;
+    overflow: hidden !important;
+}
+
+.op-custom-page-info-map::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+@media screen and (max-width: 1450px) {
+    .op-custom-page-info-map {
+        position: relative;
+        right: 6rem;
+        top: 4rem;
+        transform: scale(2);
+        display: inline-block;
+    }
+
+    .op-custom-page-info-map::before {
+        right: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .op-custom-page-info-map {
+        right: 35%;
+        bottom: 10%;
+        display: inline-block;
+    }
+
+    .op-custom-page-info-map::before {
+        right: 0;
+        bottom: 40%;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    .op-custom-page-info-container {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .op-custom-page-info-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .op-custom-page-info-heading > h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.op-custom-page-text-center {
+    text-align: center;
+}
+
+.op-custom-form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    width: 100%;
+}
+
+.op-custom-form label {
+    font-size: 0.75rem;
+    font-weight: 600;
+
+}
+
+.op-custom-form input, textarea {
+    border: 1px solid transparent !important;
+    max-width: 100% !important;
+    padding: 1.5rem 1rem !important;
+    min-height: 35px;
+}
+
+.op-custom-form textarea {
+    min-height: 150px;
+}
+
+.op-custom-form-element-full-w {
+    grid-column: 1 / -1;
+}
+
+#formContact {
+    width: 75%;
+    padding: 0 4rem;
+}
+
+.op-custom-form button:after {
+    position: relative;
+    content: url("https://cdn.myshoptet.com/usr/www.onsaplus.sk/user/documents/pages/arrow-up-right.svg");
+    top: 2px;
+    margin-left: 0.5rem;
+}
+
+.op-custom-form-element-terms {
+    font-weight: normal !important;
+    font-size: 0.75rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .op-custom-form fieldset {
+        grid-template-columns: 100%;
+        gap: 1rem;
+        align-items: start;
+        width: 100%;
+    }
+
+    #formContact {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .op-custom-form input[type="submit"] {
+        display: block !important;
+        width: 100%;
+    }
+}
